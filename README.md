@@ -31,6 +31,8 @@ The `.kitchen.yml` is already configured to use docker as the test-kitchen drive
 
 #### On OS X?
 
+_If needed, here is a [guide](https://github.com/jrwesolo/docker_osx) for installing docker on OS X._
+
 If you are on OS X, you will need to make sure that test-kitchen does not use sudo and knows the correct docker host. You can use the following `.kitchen.local.yml` for OS X support:
 
 ```yaml
@@ -114,8 +116,8 @@ This tool allows you to write integration tests that can be executed against a t
 Test Kitchen will be able to provision, converge, test, and destroy your testing environment automatically. It is a much more robust development workflow than vagrant alone.
 
 ```bash
+bundle exec kitchen list
 bundle exec kitchen test
-
 # for more information
 bundle exec kitchen help
 ```
