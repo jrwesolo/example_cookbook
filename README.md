@@ -4,6 +4,7 @@ This cookbook was created to showcase how certain tools work together for cookbo
 
 #### Development
 
+* [berkshelf](http://berkshelf.com)
 * [test-kitchen](https://github.com/test-kitchen/test-kitchen)
 * [docker](http://www.docker.com/whatisdocker)
 
@@ -78,6 +79,14 @@ Include `example_cookbook` in your node's `run_list`:
   ]
 }
 ```
+
+## Berkshelf
+
+This tool is used automatically by test-kitchen for cookbook dependency management. This is very useful when your cookbook depends on external community cookbooks. Berkshelf can download these dependencies and store them locally for cookbook development and testing. It can also be used to upload your cookbook and any dependencies to your Chef server.
+
+You can also provide different sources for Berkshelf to look for dependencies. It can be useful to host your own [Berkshelf API](https://github.com/berkshelf/berkshelf-api) server to resolve dependencies using your own Chef server.
+
+Please read about Berkshelf [here](http://berkshelf.com) to see the format and capabilities of the `Berksfile`.
 
 ## Linting
 
