@@ -122,11 +122,17 @@ bundle exec kitchen test
 bundle exec kitchen help
 ```
 
-### Common Errors
+#### Common Errors
 
-#### /var/run/docker.sock: no such file or directory
+##### /var/run/docker.sock: no such file or directory
 
 This means that the DOCKER_HOST variable is not set correctly. If on OS X, please see this [guide](https://github.com/jrwesolo/docker_osx).
+
+##### You must first isntall the Docker CLI tool
+
+If on OS X, it usually means that `.kitchen.local.yml` was not configured to make sure that sudo is not used with the docker command. Please see the `Use Docker > On OS X?` section above.
+
+Running the test kitchen command that threw the error with a `-l debug` should provide more troubleshooting information.
 
 ## Contributing
 
