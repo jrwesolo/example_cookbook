@@ -29,7 +29,7 @@ Both docker and vagrant are great tools when used in conjunction with test-kitch
 
 The `.kitchen.yml` is already configured to use docker as the test-kitchen driver.
 
-#### On OS X?
+##### On OS X?
 
 _If needed, here is a [guide](https://github.com/jrwesolo/docker_osx) for installing docker on OS X._
 
