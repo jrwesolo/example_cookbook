@@ -122,6 +122,10 @@ bundle exec kitchen test
 bundle exec kitchen help
 ```
 
+##### /var/run/docker.sock: no such file or directory
+
+This means that the DOCKER_HOST variable is not set correctly. If on OS X, please see this [guide](https://github.com/jrwesolo/docker_osx).
+
 ## Contributing
 
 1. Fork the repository on Github
