@@ -1,0 +1,14 @@
+AllCops:
+  Include:
+    - 'Gemfile'
+    - 'Berksfile'
+    - 'Vagrantfile'
+SingleSpaceBeforeFirstArg:
+  Exclude:
+    - 'metadata.rb'
+CyclomaticComplexity:
+  Max: 10
+LineLength:
+  Enabled: false
+HashSyntax:
+  Enabled: false

@@ -1,0 +1,18 @@
+---
+driver:
+  name: docker
+
+provisioner:
+  name: chef_zero
+
+platforms:
+  - name: centos-6.5
+    driver_config:
+      image: blalor/centos
+      platform: centos
+
+suites:
+  - name: default
+    run_list:
+      - recipe[example_cookbook::default]
+    attributes:
